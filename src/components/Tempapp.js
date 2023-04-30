@@ -4,7 +4,7 @@ import "./css/style.css";
 const Tempapp = () => {
 
     const [city, setCity]= useState(null);
-    const [search, setSearch] = useState("manali");
+    const [search, setSearch] = useState("Banda");
 
     useEffect( () =>  {
         const fetchApi = async () => {
@@ -36,12 +36,16 @@ const Tempapp = () => {
 
                    <div className="info">
                    <h2 className="location">
-                   <i className="fas fa-street-view" id="fos"></i>{search}
+                   <i className="fas fa-street-view" id="fossm"></i>{search}
                    </h2>
                    <h1 className="temp">
                    {city.temp}°Cel
                    </h1>
+                   <h3 className="feelslike">
+                    Feels like {city.feels_like}°Cel
+                   </h3>
                    <h3 className="tempmin_max">Min : {city.temp_min}°Cel | Max : {city.temp_max}°Cel </h3>
+                   
                 </div>
 
                 <div className="wave -one"></div>

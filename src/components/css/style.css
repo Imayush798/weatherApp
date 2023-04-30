@@ -106,7 +106,7 @@ html {
     text-transform: capitalize;
 }
 
-#fos{
+.fossm{
     animation: rotates 3s linear infinite ease;
 }
 
@@ -129,9 +129,17 @@ html {
 }
 
 .temp {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     text-align: center;
     font-size: 3rem;
+}
+
+.feelslike{
+    text-align: center;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #57606f;
 }
 
 .tempmin_max {
@@ -139,7 +147,7 @@ html {
     margin-top: 0.3rem;
     font-weight: 300;
     font-size: 1.2rem;
-    color: #57606f;
+    color: #a57606;
 }
 
 #weathercon {
