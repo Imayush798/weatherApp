@@ -17,8 +17,8 @@ body {
     font-family: "Jost", sans-serif;
 }
 
-html {
-    font-size: 100%;
+html,body {
+    font-size: 62.5%;
     height: 100%;
 }
 
@@ -48,7 +48,7 @@ html {
     width: 50rem;
     height: 50rem;
     margin-left: -25rem;
-    margin-top: -20rem;
+    margin-top: -25rem;
     transform-origin: 50% 48%;
     border-radius: 43%;
     animation: drift 3000ms infinite linear;
@@ -102,11 +102,11 @@ html {
     margin-top: -5.5rem;
     text-align: center;
     font-weight: 800;
-    font-size: 3em;
+    font-size: 3rem;
     text-transform: capitalize;
 }
 
-.fossm{
+.fa fa-street-view{
     animation: rotates 3s linear infinite ease;
 }
 
@@ -131,7 +131,7 @@ html {
 .temp {
     margin-top: 2rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .feelslike{
@@ -158,7 +158,7 @@ html {
     font-size: 3em;
 }
 
-#weathercon .fas {
+#weathercon fa fa-sun {
     font-size: 6rem;
     animation: fas-anime 3s linear infinite alternate;
 }
