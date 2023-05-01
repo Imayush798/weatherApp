@@ -53,7 +53,7 @@ const Tempapp = () => {
                 <div className="humidity">
                 <i class="fa-solid fa fa-droplet"></i>
                     <div className="text">
-                        <span id="humidity">45%</span>
+                        <span id="humidity">{city.humidity}%</span>
                         <p>Humidity</p>
                     </div>
                 </div>
