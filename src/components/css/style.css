@@ -133,7 +133,7 @@ html {
 }
 
 .temp {
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: center;
     font-size: 4rem;
 }
@@ -155,6 +155,7 @@ html {
 }
 
 #weathercon {
+    margin-top: 0.2em;
     height: 55%;
     display: flex;
     justify-content: center;
@@ -173,7 +174,7 @@ html {
         transform: scale(1.1);
     }
     to {
-        transform: scale(1.4)
+        transform: scale(1.9)
     }
 }
 
