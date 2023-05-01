@@ -205,6 +205,10 @@ html {
     animation: fas-anime 3s infinite alternate;
     
 }
+.copyright{
+    margin-top: 3rem;
+    font-weight: 600;
+}
 
 @keyframes fas-anime {
     from {
