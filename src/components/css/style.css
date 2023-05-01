@@ -8,6 +8,7 @@
 
 body {
     background: #f3f2ef;
+    /* background: rgba(237, 203, 166, 0.936); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +32,8 @@ html {
     height: 60vh;
     border-radius: 0.5rem;
     box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
-    background: #a5bbdd;
+    /* background: #a5bbdd; */
+    background: rgba(110, 241, 196, 0.733);
     position: relative;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
@@ -45,6 +47,7 @@ html {
     top: 120%;
     left: 50%;
     background: #fff;
+    /* background: rgb(227, 158, 74); */
     width: 50rem;
     height: 50rem;
     margin-left: -25rem;
@@ -106,8 +109,9 @@ html {
     text-transform: capitalize;
 }
 
-.fa fa-street-view{
+.fa-street-view{
     animation: rotates 3s linear infinite ease;
+    background-color: black;
 }
 
 @keyframes rotates {
