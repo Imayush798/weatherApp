@@ -48,6 +48,24 @@ const Tempapp = () => {
                     Feels like {city.feels_like}°Cel
                    </h3>
                    <h3 className="tempmin_max">Min : {city.temp_min}°Cel | Max : {city.temp_max}°Cel </h3>
+
+                   <div class="weather-details">
+                <div className="humidity">
+                <i class="fa-solid fa fa-droplet"></i>
+                    <div className="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div className="wind">
+                    <i className="fa-solid fa fa-wind"></i>
+                    <div className="text">
+                        <span id="wind-speed">12Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
                    
                 </div>
 

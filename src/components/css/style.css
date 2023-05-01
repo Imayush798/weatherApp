@@ -102,12 +102,49 @@ html {
 }
 
 .location {
-    margin-top: -5.5rem;
+    margin-top: -4.0rem;
     text-align: center;
     font-weight: 800;
     font-size: 4rem;
     text-transform: capitalize;
 }
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.humidity, .wind{
+    display: flex;
+    align-items: center;
+}
+
+.humidity{
+    margin-left: 20px;
+}
+.weather-details i{
+    font-size: 20px;
+}
+
+.wind{
+    margin-right: 20px;
+}
+
+.weather-details i{
+    font-size: 20px;
+}
+
+.weather-details .text{
+    margin-left: 1rem;
+    font-size: 10px;
+}
+
+.text span{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
 
 
  #anime{
@@ -174,7 +211,7 @@ html {
         transform: scale(1.1);
     }
     to {
-        transform: scale(1.9)
+        transform: scale(1.8)
     }
 }
 
