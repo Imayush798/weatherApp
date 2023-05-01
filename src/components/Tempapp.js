@@ -37,7 +37,7 @@ const Tempapp = () => {
                    <div className="info">
                     
                    <h2 className="location">
-                   <i className="fa-solid fa fa-street-view" style={{color:"#fff"}}></i> {search}
+                   <i className="fa-solid fa fa-street-view" id="anime" style={{color:"#fff"}}></i> {search}
                    {/* <i className="fa-solid fa fa-street-view" style={{color:"#fff"}}></i> {search} */}
                    </h2>
                    <p id="date">WED | OCT 23 | 10:48AM</p>

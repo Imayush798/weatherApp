@@ -109,16 +109,16 @@ html {
     text-transform: capitalize;
 }
 
-.fa-street-view{
-    animation: rotates 3s linear infinite ease;
-    background-color: black;
-}
+
+ #anime{
+    animation: rotates 3s infinite ease;
+ }
 
 @keyframes rotates {
     from {
         transform: translateX(-0.5rem);
     }
-    from {
+    to {
         transform: translateX(0.5rem);
     }
 }
@@ -162,9 +162,10 @@ html {
     font-size: 3em;
 }
 
-#weathercon fa fa-sun {
+#weathercon ,fa fa-sun {
     font-size: 6rem;
-    animation: fas-anime 3s linear infinite alternate;
+    animation: fas-anime 3s infinite alternate;
+    
 }
 
 @keyframes fas-anime {
@@ -172,7 +173,7 @@ html {
         transform: scale(1.1);
     }
     to {
-        transform: scale(1.5)
+        transform: scale(1.4)
     }
 }
 
