@@ -66,11 +66,6 @@ const Tempapp = () => {
                           </div>
                        </div>
                     </div>
-                    <div className="copyright">
-                    <footer>
-                        <p>Created by Ayush Kumar © 2023</p>
-                    </footer>
-                </div>
                    
                 </div>
 
