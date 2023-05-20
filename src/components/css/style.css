@@ -8,7 +8,7 @@
 
 body {
     background: #f3f2ef;
-    /* background: rgba(237, 203, 166, 0.936); */
+    background: rgba(237, 203, 166, 0.936);
     display: flex;
     justify-content: center;
     align-items: center;
