@@ -4,6 +4,7 @@ import "./css/style.css";
 const Tempapp = () => {
 
     const [city, setCity]= useState(null);
+    const [wind, setWind]= useState(null);
     const [search, setSearch] = useState("Banda");
 
     useEffect( () =>  {
@@ -15,12 +16,14 @@ const Tempapp = () => {
             const resJson = await response.json();
             // console.log(resJson);
             setCity(resJson.main);
+            setWind(resJson.wind);
         };
          fetchApi();
     }, [search] )
     return(
         <>
-           <div className="box">
+        
+        <div className="box">
                <div className="inputData">
                    <input 
                    type="search" 
@@ -29,56 +32,25 @@ const Tempapp = () => {
                    onChange = {(event) => { setSearch(event.target.value) } } />
                 </div> 
 
-        {!city ? (
-            <p className="errorMsg"> No Data Found</p>
-        ) :(
-             <div>
+             {!city ? ( <p className="errorMsg">Oops!! No Data Found</p> ):(
+                 
 
                    <div className="info">
-                    
-                   <h2 className="location">
-                   <i className="fa-solid fa fa-street-view" id="anime" style={{color:"#fff"}}></i> {search}
-                   {/* <i className="fa-solid fa fa-street-view" style={{color:"#fff"}}></i> {search} */}
-                   </h2>
-                   <p id="date">WED | OCT 23 | 10:48AM</p>
-                   <h1 className="temp">
-                   {city.temp}°Cel
-                   </h1>
-                   <h3 className="feelslike">
-                    Feels like {city.feels_like}°Cel
-                   </h3>
-                   <h3 className="tempmin_max">Min : {city.temp_min}°Cel | Max : {city.temp_max}°Cel </h3>
+                       <h2 className="location">{search}</h2>
+                       <h1 className="temp">{city.temp}° Cel</h1>
+                       <h3 className="feelslike">Feels like {city.feels_like}° Cel </h3>
+                       <h3 className="tempmin_max">Min : {city.temp_min}° Cel | Max : {city.temp_max}° Cel </h3>
 
-                   <div class="weather-details">
-                        <div className="humidity">
-                             <i class="fa-solid fa fa-droplet"></i>
-                             <div className="text">
-                                  <span id="humidity">{city.humidity}%</span>
-                                  <p>Humidity</p>
-                             </div>
-                         </div>
-
-                       <div className="wind">
-                          <i className="fa-solid fa fa-wind"></i>
-                          <div className="text">
-                            <span id="wind-speed">12Km/H</span>
-                            <p>Wind Speed</p>
-                          </div>
+                       <div class="weather-details">
+                             <i class="fa-solid fa fa-droplet"> <span id="humidity">{city.humidity} %</span></i>
+                          <i className="fa-solid fa fa-wind"> <span id="wind-speed">{wind.speed} M/s</span></i>
                        </div>
                     </div>
                    
-                </div>
-
-                <div className="wave -one"></div>
-                <div className="wave -two"></div>
-                <div className="wave -three"></div>
-                <div id="weathercon">
-                        <i className="fa-solid fa fa-sun" style={{color:"#eccc68"}}></i>
-                    </div>
-             </div>
         )}
             
-               </div>
+        </div>
+        <div className="footer"> &copy; All Right Reserved - Ayush Kumar</div>
         </>
     )
 }
